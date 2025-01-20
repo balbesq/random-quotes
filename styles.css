@@ -9,21 +9,18 @@ body {
   justify-content: center;
 }
 
-/* .title {
 
-} */
-/* .quote {
-
-} */
 .generate__btn {
   display: flex;
-  background-color: #1E90FF;
+  padding: 10px 50px;
   text-decoration: none;
+  font-size: 20px;
+
+  background-color: #1E90FF;
+  color: white;
+
   border: none;
   border-radius: 10px;
-  padding: 10px 50px;
-  font-size: 20px;
-  color: white;
 }
 
 .generate__btn:hover {
