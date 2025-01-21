@@ -45,3 +45,47 @@ body {
 .like__btn {
   padding: 10px 10px;
 }
+
+.deleteLike__btn {
+  padding: 10px 10px;
+}
+
+.likes {
+  margin-top: 10px;
+  padding: 10px 40px;
+  gap: 10px;
+}
+
+#favoriteQuote {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  grid-template-columns: repeat(1, 1fr); /* Расположение карточек в колонку */
+  gap: 10px; /* Отступ между карточками */
+  padding: 20px;
+}
+
+/* Карточка для лайкнутой цитаты */
+.favorite-card {
+  background-color: white;
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 15px;
+  width: 70%; /* Растягиваем карточку на всю доступную ширину */
+  max-width: 500px;  /*Ограничиваем ширину */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тень для карточки */
+  text-align: center; /* Центрируем текст внутри карточки */
+  justify-content: center;
+}
+
+/* Текст внутри карточки */
+.favorite-card p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.favorite-card em {
+  font-weight: bold;
+}
+
