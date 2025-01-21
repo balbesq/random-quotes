@@ -61,13 +61,17 @@ body {
   align-items: center;
   display: flex;
   flex-direction: column;
-  grid-template-columns: repeat(1, 1fr); /* Расположение карточек в колонку */
   gap: 10px; /* Отступ между карточками */
   padding: 20px;
 }
 
 /* Карточка для лайкнутой цитаты */
 .favorite-card {
+  display: flex;
+  align-items: center;
+  text-align: center; /* Центрируем текст внутри карточки */
+  justify-content: space-between;
+  gap: 10px;
   background-color: white;
   border: 1px solid gray;
   border-radius: 10px;
@@ -75,8 +79,6 @@ body {
   width: 70%; /* Растягиваем карточку на всю доступную ширину */
   max-width: 500px;  /*Ограничиваем ширину */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тень для карточки */
-  text-align: center; /* Центрируем текст внутри карточки */
-  justify-content: center;
 }
 
 /* Текст внутри карточки */
@@ -88,4 +90,3 @@ body {
 .favorite-card em {
   font-weight: bold;
 }
-
