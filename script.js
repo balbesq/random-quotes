@@ -1,5 +1,7 @@
 import quotes from './quotes.js'
 
+import { generateRandomInt } from './utils.js'
+
 const quoteText = document.getElementById('quote')
 const generateBtn = document.getElementById('generate__btn')
 const like = document.getElementById('like')
@@ -12,7 +14,7 @@ let isFavoriteState = false
 let currentQuoteIndex = 0
 
 function generateQuote() {
-  const randomIndex = Math.floor(Math.random() * quotes.length)
+  const randomIndex = generateRandomInt(quotes.length)
   const randomQuote = quotes[randomIndex]
   currentQuoteIndex = randomIndex
 
